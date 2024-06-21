@@ -1,5 +1,5 @@
 # FairINV
-An official PyTorch implementation of FairINV (**Paper Title:** One Fits All: Learning Fair Graph Neural Networks for Various Sensitive Attributes).
+An official PyTorch implementation of FairINV (**Paper Title:** [One Fits All: Learning Fair Graph Neural Networks for Various Sensitive Attributes](https://arxiv.org/abs/2406.13544)).
 
 ## Overview
 **Motivation:** Existing fairness approaches are often tailored to specific sensitive attributes. Consequently, they necessitate retraining the model from scratch to accommodate changes in the sensitive attribute requirement, resulting in high computational costs.
@@ -8,7 +8,7 @@ An official PyTorch implementation of FairINV (**Paper Title:** One Fits All: Le
 
 
 <div style="text-align: center;">
-    <img src="./imgs/causal_analysis.png" style="zoom: 30%;" />
+    <img src="./imgs/causal_analysis.png" style="zoom: 30%;" width="800" />
 </div>
 
 **Our solution:** we first formulate the graph fairness issue from an invariant learning perspective, where sensitive attributes as environments. Building upon this formulation, we propose a universal graph fairness framework named **FairINV**. FairINV jointly optimizes a fair GNN for multiple sensitive attributes inferred automatically via sensitive attribute partition. Meanwhile, FairINV incorporates invariant learning optimization objectives building upon sensitive attribute partition to remove confounding effects induced by the sensitive attribute. The overview of FairINV is shown as follows.
